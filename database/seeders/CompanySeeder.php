@@ -21,13 +21,5 @@ class CompanySeeder extends Seeder
             'name' => 'Venikom',
             'address' => 'Company address 1'
         ]);
-        Company::query()->create([
-            'name' => 'Bike Computer',
-            'address' => 'Company address 2'
-        ]);
-        Company::query()->create([
-            'name' => 'Digitalhub',
-            'address' => 'Company address 3'
-        ]);
     }
 }

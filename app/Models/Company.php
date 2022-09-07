@@ -9,7 +9,8 @@ class Company extends Model
 {
     use HasFactory;
 
-    public static function create(array $array)
+    public function employees(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
+        return $this->hasMany(Employee::class);
     }
 }
