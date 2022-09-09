@@ -23,3 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::apiResource('companies', CompanyController::class)->only('index', 'show');
 Route::get('/employeeSalaries/{employee}', [EmployeeController::class, 'employeeSalaries']);
 Route::get('/averageSalary/{employee}', [EmployeeController::class, 'averageSalary']);
+Route::get('/averageSalaryCompany/{company}', [CompanyController::class, 'companyAverageSalary']);
